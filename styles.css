@@ -1,0 +1,389 @@
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+
+    /* Color */
+    --default-white:#fff;
+    --default-black:#000;
+
+    --neutral-50:#fafafa;
+    --neutral-100:#f4f4f4;
+    --neutral-200:#e7e7e7;
+    --neutral-300:#d5d5d5;
+    --neutral-400:#a3a3a3;
+    --neutral-500:#717171;
+    --neutral-600:#545454;
+    --neutral-700:#434343;
+    --neutral-800:#2a2a2a;
+    --neutral-900:#1b1b1b;
+
+    --primary-50:#f5f5ff;
+    --primary-100:#e1e1fe;
+    --primary-200:#c3c4fe;
+    --primary-300:#9b9dfd;
+    --primary-400:#7a7bf9;
+    --primary-500:#4b4efc;
+    --primary-600:#1e22fb;
+    --primary-700:#0408e7;
+    --primary-800:#0306ba;
+    --primary-900:#020582;
+
+    --success-50:#f0fdf4;
+    --success-100:#dcfce7;
+    --success-200:#bbf7d0;
+    --success-300:#86efac;
+    --success-400:#4ade80;
+    --success-500:#22c55e;
+    --success-600:#16a34a;
+    --success-700:#15803d;
+    --success-800:#166534;
+    --success-900:#14532d;
+
+    --error-50:#fef2f2;
+    --error-100:#fee2e2;
+    --error-200:#fecaca;
+    --error-300:#fca5a5;
+    --error-400:#f87171;
+    --error-500:#ef4444;
+    --error-600:#dc2626;
+    --error-700:#b91c1c;
+    --error-800:#991b1b;
+    --error-900:#7f1d1d;
+
+    --warning-50:#fffbeb;
+    --warning-100:#fef3c7;
+    --warning-200:#fde68a;
+    --warning-300:#fbd34d;
+    --warning-400:#fbbf24;
+    --warning-500:#f59e0b;
+    --warning-600:#d97706;
+    --warning-700:#b45309;
+    --warning-800:#92400e;
+    --warning-900:#78350f;
+
+
+
+
+    /* Typography */
+    --h1-font-size: 96px;
+    --h1-line-height: 112px;
+    --h1-letter-spacing: -0.02em;
+
+    --h2-font-size: 60px;
+    --h2-line-height: 72px;
+    --h2-letter-spacing: -0.02em;
+
+    --h3-font-size: 48px;
+    --h3-line-height: 56px;
+    --h3-letter-spacing: -0.02em;
+
+    --h4-font-size: 34px;
+    --h4-line-height: 42px;
+    --h4-letter-spacing: -0.02em;
+
+    --h5-font-size: 24px;
+    --h5-line-height: 32px;
+    --h5-letter-spacing: -0.02em;
+
+    --h6-font-size: 20px;
+    --h6-line-height: 32px;
+    --h6-letter-spacing: 0;
+
+    --subtitle-1-font-size: 16px;
+    --subtitle-1-line-height: 28px;
+    --subtitle-1-letter-spacing: 0;
+
+    --subtitle-2-font-size: 14px;
+    --subtitle-2-line-height: 22px;
+    --subtitle-2-letter-spacing: 0;
+
+    --body-1-font-size: 16px;
+    --body-1-line-height: 24px;
+    --body-1-letter-spacing: 0;
+
+    --body-2-font-size: 14px;
+    --body-2-line-height: 20px;
+    --body-2-letter-spacing: 0;
+
+    --button-font-size: 16px;
+    --button-line-height: 16px;
+    --button-letter-spacing: 0;
+
+    --caption-font-size: 12px;
+    --caption-line-height: 20px;
+    --caption-letter-spacing: 0;
+
+    --overline-font-size: 12px;
+    --overline-line-height: 32px;
+    --overline-letter-spacing: 0;
+
+
+    /* Weight */
+    --font-weight-neutral: 400;   
+    --font-weight-medium: 500;   
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+
+
+    /* Box-Shadow */
+    --elevation-1: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    --elevation-2: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px -2px rgba(16, 24, 40, 0.1);
+    --elevation-3: 0px 4px 6px -1px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.1);
+    --elevation-4: 0px 10px 15px -3px rgba(16, 24, 40, 0.1), 0px 4px 6px -4px rgba(16, 24, 40, 0.1);
+    --elevation-5: 0px 20px 25px -5px rgba(16, 24, 40, 0.1), 0px 8px 10px -6px rgba(16, 24, 40, 0.1);
+    --elevation-6: 0px 20px 25px -5px rgba(16, 24, 40, 0.1), 0px 8px 10px -6px rgba(16, 24, 40, 0.1);
+
+    /* Blur */
+    --blur-1-background: rgba(17, 24, 39, 0.2);
+    --blur-1-backdrop-filter: blur(8px);
+
+    --blur-2-background: rgba(17, 24, 39, 0.2);
+    --blur-2-backdrop-filter: blur(16px);
+
+    --blur-3-background: rgba(17, 24, 39, 0.2);
+    --blur-3-backdrop-filter: blur(24px);
+
+    --blur-4-background: rgba(17, 24, 39, 0.2);
+    --blur-4-backdrop-filter: blur(40px);
+
+
+
+    
+    /* Border */
+    --border-width-thin: 1px;
+    --border-width-medium: 2px;
+    --border-width-thick: 4px;
+
+    --border-radius-1:4px;
+    --border-radius-2:8px;
+    --border-radius-3:12px;
+    --border-radius-4:16px;
+    --border-radius-5:20px;
+    --border-radius-6:24px;
+    --border-radius-7:28px;
+    --border-radius-8:32px;
+    --border-radius-10:40px;
+
+    /* Spacing */
+    --spacing-1:4px;
+    --spacing-2:8px;
+    --spacing-3:12px;
+    --spacing-4:16px;
+    --spacing-5:20px;
+    --spacing-6:24px;
+    --spacing-7:28px;
+    --spacing-8:32px;
+    --spacing-10:40px;
+    --spacing-12:48px;
+    --spacing-16:64px;
+    --spacing-20:80px;
+    --spacing-24:96px;
+    --spacing-32:128px;
+    --spacing-40:160px;
+    --spacing-48:192px;
+
+
+    /* Time */
+    --transition-duration-slow: 0.5s;   
+    --transition-duration-medium: 0.3s; 
+    --transition-duration-fast: 0.1s;
+
+
+    /* Specific variables */
+    /* buttons */
+
+    /* primary */
+    --button-primary-bg:var(--primary-600);
+    --button-primary-bg-hover:var(--primary-400);
+
+    /* success */
+    --button-success-bg:var(--success-500);
+    --button-success-bg-hover:var(--success-300);
+
+    /* error */
+    --button-error-bg:var(--error-500);
+    --button-error-bg-hover:var(--error-300);
+    
+    /* warning */
+    --button-warning-bg:var(--warning-400);
+    --button-warning-bg-hover:var(--warning-200);
+
+    /* neutral */
+    --button-neutral-bg:var(--neutral-600);
+    --button-neutral-bg-hover:var(--neutral-400);
+
+    /* neutral-2 */
+    --button-neutral-2-bg:var(--neutral-50);
+    --button-neutral-2-bg-hover:var(--neutral-200);
+    --button-neutral-2-color:var(--neutral-600);
+
+    /* Icons */
+    --icon-font-size:20px;
+
+}
+
+
+/* Components */
+
+/* Button */
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3) var(--spacing-6);
+    border-radius: var(--border-radius-2);
+    width: max-content;
+    border: var(--border-width-medium) solid transparent;
+    transition: background var(--transition-duration-medium), border var(--transition-duration-medium), color var(--transition-duration-medium);
+}
+
+.button .content{
+    font-weight: var(--font-weight-medium);
+    font-size: var(--button-font-size);
+    line-height: var(--button-line-height);
+    letter-spacing: var(--button-letter-spacing);
+}
+
+.button .icon{
+    font-size: var(--icon-font-size);
+}
+
+.button.just-icon{
+    padding: var(--spacing-3) var(--spacing-3);
+}
+
+.button.outline{
+    background-color: var(--default-white) !important;
+}
+
+
+/* Primary */
+.button.primary{
+    background-color: var(--button-primary-bg);
+    color: var(--default-white);
+}
+
+.button.primary:hover{
+    background-color: var(--button-primary-bg-hover);
+}
+
+.button.primary.outline{
+    border-color:var(--button-primary-bg);
+    color: var(--button-primary-bg);
+}
+
+.button.primary.outline:hover{
+    border-color:var(--button-primary-bg-hover);
+    color: var(--button-primary-bg-hover);
+}
+
+
+/* Success */
+.button.success{
+    background-color: var(--button-success-bg);
+    color: var(--default-white);
+}
+
+.button.success:hover{
+    background-color: var(--button-success-bg-hover);
+}
+
+.button.success.outline{
+    border-color:var(--button-success-bg);
+    color: var(--button-success-bg);
+}
+
+.button.success.outline:hover{
+    border-color:var(--button-success-bg-hover);
+    color: var(--button-success-bg-hover);
+}
+
+
+/* Erorr */
+.button.error{
+    background-color: var(--button-error-bg);
+    color: var(--default-white);
+}
+
+.button.error:hover{
+    background-color: var(--button-error-bg-hover);
+}
+
+.button.error.outline{
+    border-color:var(--button-error-bg);
+    color: var(--button-error-bg);
+}
+
+.button.error.outline:hover{
+    border-color:var(--button-error-bg-hover);
+    color: var(--button-error-bg-hover);
+}
+
+
+/* Warning */
+.button.warning{
+    background-color: var(--button-warning-bg);
+    color: var(--default-white);
+}
+
+.button.warning:hover{
+    background-color: var(--button-warning-bg-hover);
+}
+
+.button.warning.outline{
+    border-color:var(--button-warning-bg);
+    color: var(--button-warning-bg);
+}
+
+.button.warning.outline:hover{
+    border-color:var(--button-warning-bg-hover);
+    color: var(--button-warning-bg-hover);
+}
+
+
+/* Neutral */
+.button.neutral{
+    background-color: var(--button-neutral-bg);
+    color: var(--default-white);
+}
+
+.button.neutral:hover{
+    background-color: var(--button-neutral-bg-hover);
+}
+
+.button.neutral.outline{
+    border-color:var(--button-neutral-bg);
+    color: var(--button-neutral-bg);
+}
+
+.button.neutral.outline:hover{
+    border-color:var(--button-neutral-bg-hover);
+    color: var(--button-neutral-bg-hover);
+}
+
+
+/* Neutral 2 */
+.button.neutral-2{
+    background-color: var(--button-neutral-2-bg);
+    color: var(--button-neutral-2-color);
+}
+
+.button.neutral-2:hover{
+    background-color: var(--button-neutral-2-bg-hover);
+}
+
+.button.neutral-2.outline{
+    background-color: var(--default-white);
+    border: var(--border-);
+}
