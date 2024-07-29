@@ -1,0 +1,88 @@
+:root{
+    
+
+    /* Input */    
+    --input-placeholder-color: var(--neutral-300);
+    --input-placeholder-color-error: var(--error-300);
+    --input-placeholder-color-success: var(--success-300);
+
+    --input-color: var(--neutral-600);
+    --input-color-hover: var(--primary-300);
+    --input-color-focus: var(--primary-400);
+    --input-color-error: var(--error-400);
+    --input-color-success: var(--success-400);
+    
+    --input-bg: var(--default-white);
+    --input-bg-hover: var(--primary-50);
+    --input-bg-focus: var(--primary-50);
+    --input-bg-error: var(--error-50);
+    --input-bg-success: var(--success-50);
+
+    --input-border-color: var(--neutral-100);
+    --input-border-color-hover: var(--primary-100);
+    --input-border-color-focus: var(--primary-200);
+    --input-border-color-error: var(--error-100);
+    --input-border-color-success: var(--success-100);
+
+    --input-border-radius: var(--border-radius-2);
+
+    --input-h-padding:var(--spacing-3);
+    --input-w-padding:var(--spacing-4);
+
+    
+    --input-font-size: 16px;
+    --input-line-height: 16px;
+    --input-letter-spacing: 0;
+
+
+}
+
+/* Inputs */
+.input{
+    width: 300px;
+    border: var(--border-width-thin) solid var(--input-border-color);
+    border-radius: var(--input-border-radius);
+    color: var(--input-color);
+    font-size:var(--input-font-size);
+    letter-spacing: var(--input-letter-spacing);
+    line-height: var(--input-line-height);
+    padding: var(--input-h-padding) var(--input-w-padding);
+
+    outline: none;
+
+    transition: border var(--transition-duration-medium), background var(--transition-duration-medium), color var(--transition-duration-medium);
+}
+
+.input::placeholder{
+    color: var(--input-placeholder-color);
+}
+
+.input:focus{
+    color: var(--input-color-focus);
+    border-color: var(--input-border-color-focus);
+    background-color: var(--input-bg-focus);
+}
+
+
+/* error */
+.input.error{
+    color: var(--input-color-error);
+    background-color: var(--input-bg-error);
+    border-color: var(--input-border-color-error);
+}
+
+
+.input.error::placeholder{
+    color: var(--input-placeholder-color-error);
+}
+
+/* success */
+.input.success{
+    color: var(--input-color-success);
+    background-color: var(--input-bg-success);
+    border-color: var(--input-border-color-success);
+}
+
+.input.success::placeholder{
+    color: var(--input-placeholder-color-success);
+}
